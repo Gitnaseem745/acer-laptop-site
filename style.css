@@ -1,0 +1,149 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Zen Dots", sans-serif;
+    color: white;
+}
+html, body{
+    width: 100%;
+    background-color: rgb(28, 28, 28);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    padding: 0px 100px;
+    padding-top: 10px;
+}
+.navbar .logo{
+    width: 50px;
+    cursor: pointer;
+}
+.navbar .nav-menus{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 560px;
+}
+.navbar .nav-menus .nav-links{
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.navbar .search{
+    width: 20px;
+    cursor: pointer;
+}
+.hero{
+    width: 100%;
+    height: 864px;
+    background-image: url(assets/heroImg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.t-card-1{
+    width: 250px;
+    height: 130px;
+    border-radius: 12px;
+    position: absolute;
+    top: 240px;
+    left: 35%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.t-card-1 h2{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.t-card-1 p{
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    line-height: 1.2rem;
+    letter-spacing: 0.5px;
+}
+.t-card-2{
+    width: 250px;
+    height: 130px;
+    border-radius: 12px;
+    position: absolute;
+    top: 310px;
+    left: 80%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.t-card-2 h2{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.t-card-2 p{
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    line-height: 1.2rem;
+    letter-spacing: 0.5px;
+}
+.t-card-3{
+    width: 250px;
+    height: 130px;
+    border-radius: 12px;
+    position: absolute;
+    top: 580px;
+    left: 55%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.t-card-3 h2{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.t-card-3 p{
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    line-height: 1.2rem;
+    letter-spacing: 0.5px;
+}
+.see-more{
+    position: absolute;
+    top: 86%;
+    left: 41%;
+    text-align: center;
+}
+.see-more .see-more-text{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.see-more .see-more-btn{
+    cursor: pointer;
+    margin-left: 47px;
+    background-color: #C63D2F;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 8px;
+    width: 120px;
+    height: 35px;
+    font-size: 14px;
+    
+}
+.see-more .see-more-btn:hover{
+    background-color: #f53d29;
+}
+
