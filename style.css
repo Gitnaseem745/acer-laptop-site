@@ -7,8 +7,23 @@
 }
 html, body{
     width: 100%;
-    background-color: rgb(28, 28, 28);
+    background-color: #000;
 }
+
+/* hero */
+
+.hero{
+    width: 100%;
+    height: 864px;
+    background-image: url(assets/heroImg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* navbar */
+
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -30,22 +45,19 @@ html, body{
 }
 .navbar .nav-menus .nav-links{
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
     cursor: pointer;
+}
+.navbar .nav-menus .nav-links:hover{
+    color: #C63D2F;
 }
 .navbar .search{
     width: 20px;
     cursor: pointer;
 }
-.hero{
-    width: 100%;
-    height: 864px;
-    background-image: url(assets/heroImg.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}
+
+/* cards */
+
 .t-card-1{
     width: 250px;
     height: 130px;
@@ -54,22 +66,22 @@ html, body{
     top: 240px;
     left: 35%;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(212, 212, 212, 0.1);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .t-card-1 h2{
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 5px;
 }
 .t-card-1 p{
     font-size: 13px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
     line-height: 1.2rem;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.3px;
 }
 .t-card-2{
     width: 250px;
@@ -79,22 +91,22 @@ html, body{
     top: 310px;
     left: 80%;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(212, 212, 212, 0.1);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .t-card-2 h2{
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 5px;
-}
+}   
 .t-card-2 p{
     font-size: 13px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
     line-height: 1.2rem;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.3px;
 }
 .t-card-3{
     width: 250px;
@@ -104,23 +116,26 @@ html, body{
     top: 580px;
     left: 55%;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(212, 212, 212, 0.1);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .t-card-3 h2{
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 5px;
 }
 .t-card-3 p{
     font-size: 13px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
     line-height: 1.2rem;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.3px;
 }
+
+/* see more */
+
 .see-more{
     position: absolute;
     top: 86%;
@@ -147,3 +162,105 @@ html, body{
     background-color: #f53d29;
 }
 
+/* about */
+
+.about{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: row;
+    padding: 40px;
+    padding-right: 10px;
+}
+.about .about-card{
+    width: 100%;
+    height: 660px;
+    background: rgba(212, 212, 212, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* about card left side */
+
+.left-side{
+    width: 50%;
+}
+.section-name{
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    padding: 20px;
+}
+.section-name img{
+    width: 19px;
+}
+.section-name p{
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: "inter", sans-serif;
+    font-weight: 700;
+}
+.card-text{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 40px;
+    padding: 30px;
+    hyphens: auto;
+}
+.card-text h2{
+    font-size: 30px;
+    line-height: 3rem;
+    letter-spacing: 0.6px;
+    word-spacing: 0.7px;
+}
+.card-text p{
+    line-height: 1.7rem;
+    font-family: "inter", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+}
+.about .branding{
+    width: 30px;
+    pointer-events: none;
+    height: 120px;
+}
+
+/* about card right side */
+
+.right-side{
+    width: 50%; 
+    padding: 40px;
+    padding-left: 230px;
+    padding-right: 80px;
+}
+.right-side p{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "inter", sans-serif;
+    margin-bottom: 20px;
+}
+.right-side h2{
+    font-size: 80px;
+    font-weight: 600;
+    font-family: "inter", sans-serif;
+    margin-bottom: 20px;
+}
+.right-side img{
+    width: 100%;
+    height: 1px;
+    margin-bottom: 20px;
+}
