@@ -233,10 +233,11 @@ html, body{
     font-weight: 600;
     letter-spacing: 0.7px;
 }
-.about .branding{
+.branding{
     width: 30px;
     pointer-events: none;
     height: 120px;
+    opacity: 0;
 }
 
 /* about card right side */
@@ -438,7 +439,25 @@ html, body{
     text-align: center;
     padding-top: 10px;
     margin-top: 10px;
+    cursor: pointer;
 }
 .order-btn:hover{
     background-color: #f53d29;
+}
+
+
+.brand{
+    position: relative;
+}
+.brand-img{
+    position: fixed;
+    right: 0%;
+    top: 50%;
+    mix-blend-mode: difference;
+    pointer-events: none;
+}
+#submit-text{
+    font-size: 12px;
+    font-weight: 600;
+    font-family: "inter", sans-serif;
 }
