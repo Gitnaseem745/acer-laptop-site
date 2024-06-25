@@ -444,7 +444,13 @@ html, body{
 .order-btn:hover{
     background-color: #f53d29;
 }
+#submit-text{
+    font-size: 12px;
+    font-weight: 600;
+    font-family: "inter", sans-serif;
+}
 
+/* right side brand logo */
 
 .brand{
     position: relative;
@@ -455,9 +461,4 @@ html, body{
     top: 50%;
     mix-blend-mode: difference;
     pointer-events: none;
-}
-#submit-text{
-    font-size: 12px;
-    font-weight: 600;
-    font-family: "inter", sans-serif;
 }
