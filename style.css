@@ -462,3 +462,43 @@ html, body{
     mix-blend-mode: difference;
     pointer-events: none;
 }
+
+/* footer bar */
+
+.footer-bar {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+    padding: 10px 20px;
+    background: rgba(212, 212, 212, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.footer-bar button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+.footer-bar button:hover{
+    background-color: rgba(212, 212, 212, 0.3);
+}
+
+/* Hidden state */
+
+.footer-bar.hidden {
+    transform: translateX(-50%) translateY(100px);
+    opacity: 0;
+}

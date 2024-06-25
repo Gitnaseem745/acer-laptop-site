@@ -23,3 +23,30 @@ orderBtn.addEventListener('click', (e)=>{
         messageBox.value = '';
         submitText.innerHTML = 'Your email is submitted succesfully';
     }})
+
+// footer bar
+
+let lastScrollTop = 0;
+
+const footerBar = document.getElementById('footer-bar');
+
+const heroSection = document.querySelector('.hero');
+
+window.addEventListener('scroll', function() {
+    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+    const heroHeight = heroSection.offsetHeight;
+
+    if (currentScroll > heroHeight) {
+        if (currentScroll > lastScrollTop) {
+            footerBar.classList.add('hidden');
+        } else {
+            footerBar.classList.remove('hidden');
+        }
+    } else {
+        footerBar.classList.add('hidden');
+    }
+    
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+});
+   
