@@ -50,3 +50,189 @@ window.addEventListener('scroll', function() {
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 });
    
+// gsap on hero section
+
+let tl = gsap.timeline()
+
+// navbar
+
+tl.from('.navbar',{
+    y: 10,
+    opacity: 0,
+    duration: 1,
+    scrub: 1,
+})
+
+// cards
+
+tl.from('.t-card-1',{
+    y: 10,
+    opacity: 0,
+    duration: 1,
+    scrub: 1,
+})
+tl.from('.t-card-2',{
+    y: 10,
+    opacity: 0,
+    duration: 1,
+    scrub: 1,
+})
+tl.from('.t-card-3',{
+    y: 10,
+    opacity: 0,
+    duration: 1,
+    scrub: 1,
+})
+
+// see more
+
+gsap.from('.see-more .see-more-text',{
+    y: 10,
+    opacity: 0,
+    duration: 1,
+    scrub: 1,
+    scrollTrigger: {
+        trigger: '.t-card-3',
+        start: 'top 50%',
+        end: 'bottom 70%',
+}
+})
+gsap.from('.see-more .see-more-btn',{
+    y: 10,
+    opacity: 0,
+    duration: 2,
+    scrub: 1,
+    scrollTrigger: {
+        trigger: '.t-card-3',
+        start: 'top 45%',
+        end: 'bottom 65%',
+    }
+})
+
+// gsap on about section
+
+// section name
+
+gsap.from('.section-name',{
+    y: 20,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: '.about',
+        start: 'top 60%',
+        end: 'bottom bottom',
+    }
+})
+gsap.from('.card-text h2',{
+    y: 20,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: '.about',
+        start: 'top 60%',
+        end: 'bottom bottom',
+    }
+})
+gsap.from('.card-text p',{
+    y: 20,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: '.about',
+        start: 'top 40%',
+        end: 'bottom bottom',
+    }
+})
+
+// about card right side
+
+gsap.from('.right-side #p-1',{
+    y: 20,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: '.about',
+        start: 'top 60%',
+        end: 'bottom bottom',
+    }
+})
+gsap.from('.right-side #h2-1',{
+    y: 20,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: '.about',
+        start: 'top 60%',
+        end: 'bottom bottom',
+    }
+})
+gsap.from('.right-side #img-1',{
+    y: 20,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: '.about',
+        start: 'top 60%',
+        end: 'bottom bottom',
+    }
+})
+gsap.from('.right-side #p-2',{
+    y: 20,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: '.about',
+        start: 'top 50%',
+        end: 'bottom bottom',
+    }
+})
+gsap.from('.right-side #h2-2',{
+    y: 20,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: '.about',
+        start: 'top 50%',
+        end: 'bottom bottom',
+    }
+})
+gsap.from('.right-side #img-2',{
+    y: 20,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: '.about',
+        start: 'top 50%',
+        end: 'bottom bottom',
+    }
+})
+gsap.from('.right-side #p-3',{
+    y: 20,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: '.about',
+        start: 'top 40%',
+        end: 'bottom bottom',
+    }
+})
+gsap.from('.right-side #h2-3',{
+    y: 20,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: '.about',
+        start: 'top 40%',
+        end: 'bottom bottom',
+    }
+})
+gsap.from('.right-side #img-3',{
+    y: 20,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: '.about',
+        start: 'top 40%',
+        end: 'bottom bottom',
+    }
+})
