@@ -56,11 +56,24 @@ let tl = gsap.timeline()
 
 // navbar
 
-tl.from('.navbar',{
+tl.from('.navbar .logo',{
+    y: 20,
+    opacity: 0,
+    duration: 0.5,
+    scrub: 1,
+})
+tl.from('.nav-links',{
     y: 10,
     opacity: 0,
-    duration: 1,
+    duration: 0.1,
     scrub: 1,
+})
+tl.from('.navbar .search',{
+    y: 10,
+    opacity: 0,
+    duration: 0.5,
+    scrub: 1,
+    stagger: 1,
 })
 
 // cards
@@ -68,19 +81,19 @@ tl.from('.navbar',{
 tl.from('.t-card-1',{
     y: 10,
     opacity: 0,
-    duration: 1,
+    duration: 0.5,
     scrub: 1,
 })
 tl.from('.t-card-2',{
     y: 10,
     opacity: 0,
-    duration: 1,
+    duration: 0.5,
     scrub: 1,
 })
 tl.from('.t-card-3',{
     y: 10,
     opacity: 0,
-    duration: 1,
+    duration: 0.5,
     scrub: 1,
 })
 
@@ -118,7 +131,7 @@ gsap.from('.about-card',{
     scrollTrigger: {
         trigger: '.hero',
         start: 'bottom 50%',
-        end: 'bottom 70%',
+        end: 'bottom bottom',
     }
 })
 
