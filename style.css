@@ -395,7 +395,7 @@ html, body{
     height: 864px;
     padding: 40px;
     padding-right: 10px;
-    background-image: url(assets/heroImg.png);
+    background-image: url(assets/contactBg.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -454,6 +454,13 @@ html, body{
     font-size: 12px;
     font-weight: 600;
     font-family: "inter", sans-serif;
+}
+.contact-elem{
+    width: 600px;
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    rotate: -8deg;
 }
 
 /* right side brand logo */

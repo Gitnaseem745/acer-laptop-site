@@ -387,3 +387,23 @@ gsap.from('.contact .t-form input, .t-form textarea, .t-form p',{
         end: 'bottom bottom',
     }
 })
+
+// contact elem animation
+
+gsap.to('.contact-elem',{
+    y:-3,
+    duration: 1,
+    scrub: 1,
+    yoyo: true,
+    repeat: -1,
+})
+// gsap.from('.contact-elem',{
+//     y: 3,
+//     opacity: 0,
+//     duration: 1.5,
+//     scrollTrigger: {
+//         trigger: '.contact',
+//         start: 'bottom 40%',
+//         end: 'bottom bottom',
+//     }
+// })
