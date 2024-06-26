@@ -111,9 +111,20 @@ gsap.from('.see-more .see-more-btn',{
 
 // gsap on about section
 
+gsap.from('.about-card',{
+    y:20,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: '.hero',
+        start: 'bottom 50%',
+        end: 'bottom 70%',
+    }
+})
+
 // section name
 
-gsap.from('.section-name',{
+gsap.from('.section-name #about, .section-name .circle-icon-1',{
     y: 20,
     opacity: 0,
     duration: 1,
@@ -182,7 +193,7 @@ gsap.from('.right-side #p-2',{
     duration: 1,
     scrollTrigger: {
         trigger: '.about',
-        start: 'top 50%',
+        start: 'top 40%',
         end: 'bottom bottom',
     }
 })
@@ -192,7 +203,7 @@ gsap.from('.right-side #h2-2',{
     duration: 1,
     scrollTrigger: {
         trigger: '.about',
-        start: 'top 50%',
+        start: 'top 40%',
         end: 'bottom bottom',
     }
 })
@@ -202,7 +213,7 @@ gsap.from('.right-side #img-2',{
     duration: 1,
     scrollTrigger: {
         trigger: '.about',
-        start: 'top 50%',
+        start: 'top 40%',
         end: 'bottom bottom',
     }
 })
@@ -212,7 +223,7 @@ gsap.from('.right-side #p-3',{
     duration: 1,
     scrollTrigger: {
         trigger: '.about',
-        start: 'top 40%',
+        start: 'top 20%',
         end: 'bottom bottom',
     }
 })
@@ -222,7 +233,7 @@ gsap.from('.right-side #h2-3',{
     duration: 1,
     scrollTrigger: {
         trigger: '.about',
-        start: 'top 40%',
+        start: 'top 20%',
         end: 'bottom bottom',
     }
 })
@@ -232,7 +243,29 @@ gsap.from('.right-side #img-3',{
     duration: 1,
     scrollTrigger: {
         trigger: '.about',
-        start: 'top 40%',
+        start: 'top 20%',
         end: 'bottom bottom',
     }
 })
+
+// features section horizontal slider with gsap
+
+gsap.registerPlugin(ScrollTrigger);
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    ScrollTrigger.create({
+        trigger: '.slider-imgs',
+        start: 'top top',
+        end: '+=1000vh',
+        scrub: 1,
+        pin: true,
+        onUpdate: (self) => {
+            gsap.to('.slider-imgs', {
+                x: `${-350 * self.progress}vw`,
+                duration: 0.5,
+                ease: 'power3.out',
+            });
+        }
+    });
+});
