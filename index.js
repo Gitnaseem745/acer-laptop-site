@@ -248,6 +248,42 @@ gsap.from('.right-side #img-3',{
     }
 })
 
+// features section gsap
+
+
+gsap.from('.features .section-name',{
+    y: 20,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: '.features',
+        start: 'top 30%',
+        end: 'bottom bottom',
+    }
+})
+
+gsap.from('.features .features-wrapper .features-title',{
+    y: 20,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: '.features',
+        start: 'top 25%',
+        end: 'bottom bottom',
+    }
+})
+
+gsap.from('.features .features-wrapper .sub-title',{
+    y: 20,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: '.features',
+        start: 'top 20%',
+        end: 'bottom bottom',
+    }
+})
+
 // features section horizontal slider with gsap
 
 gsap.registerPlugin(ScrollTrigger);
@@ -269,3 +305,85 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+// closer look section gsap
+
+
+gsap.from('.closer-look .section-name',{
+    y: 20,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: '.closer-look',
+        start: 'bottom 20%',
+        end: 'bottom bottom',
+    }
+})
+
+gsap.from('.closer-look .features-wrapper h2',{
+    y: 20,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: '.closer-look',
+        start: 'bottom 15%',
+        end: 'bottom bottom',
+    }   
+})
+
+gsap.from('.closer-look .features-wrapper .sub-title',{
+    y: 20,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: '.closer-look',
+        start: 'bottom 10%',
+        end: 'bottom bottom',
+    }
+})
+
+// contact section gsap
+
+gsap.from('.contact .section-name',{
+    y: 20,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: '.contact',
+        start: 'bottom 60%',
+        end: 'bottom bottom',
+    }
+})
+
+gsap.from('.contact .features-wrapper h2',{
+    y: 20,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: '.contact',
+        start: 'bottom 55%',
+        end: 'bottom bottom',
+    }   
+})
+
+gsap.from('.contact .features-wrapper .sub-title',{
+    y: 20,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: '.contact',
+        start: 'bottom 50%',
+        end: 'bottom bottom',
+    }
+})
+gsap.from('.contact .t-form input, .t-form textarea, .t-form p',{
+    x: -10,
+    opacity: 0,
+    duration: 0.5,
+    stagger: 1,
+    scrollTrigger: {
+        trigger: '.contact',
+        start: 'bottom 40%',
+        end: 'bottom bottom',
+    }
+})

@@ -1,0 +1,211 @@
+/* Media Queries */
+
+/* Large Devices (desktops, 1200px and up) */
+@media (max-width: 1200px) {
+    .navbar {
+        padding: 0px 50px;
+    }
+    .navbar .nav-menus {
+        width: 400px;
+    }
+    .right-side {
+        padding-left: 150px;
+        padding-right: 50px;
+    }
+}
+
+/* Medium Devices (landscape tablets, 992px and up) */
+@media (max-width: 992px) {
+    .navbar {
+        padding: 0px 30px;
+    }
+    .navbar .nav-menus {
+        width: 300px;
+    }
+    .t-card-1 {
+        left: 25%;
+    }
+    .t-card-2 {
+        left: 70%;
+    }
+    .t-card-3 {
+        left: 45%;
+    }
+    .right-side {
+        padding-left: 100px;
+        padding-right: 30px;
+    }
+    .gaming-king-img {
+        width: 50%;
+    }
+    .gaming-content .gaming-text h2 {
+        font-size: 60px;
+    }
+}
+
+/* Small Devices (portrait tablets and large phones, 768px and up) */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0px 20px;
+    }
+    .navbar .nav-menus {
+        width: 200px;
+    }
+    .t-card-1, .t-card-2, .t-card-3 {
+        width: 200px;
+        height: 110px;
+    }
+    .t-card-1 h2, .t-card-2 h2, .t-card-3 h2 {
+        font-size: 16px;
+    }
+    .t-card-1 p, .t-card-2 p, .t-card-3 p {
+        font-size: 12px;
+    }
+    .t-card-1 {
+        left: 20%;
+    }
+    .t-card-2 {
+        left: 65%;
+    }
+    .t-card-3 {
+        left: 40%;
+    }
+    .see-more {
+        left: 35%;
+    }
+    .see-more .see-more-text {
+        font-size: 18px;
+    }
+    .see-more .see-more-btn {
+        margin-left: 40px;
+        width: 100px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .about {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .about .about-card {
+        height: auto;
+        flex-direction: column;
+    }
+    .right-side {
+        padding-left: 50px;
+        padding-right: 20px;
+    }
+    .right-side h2 {
+        font-size: 60px;
+    }
+    .gaming-king-img {
+        width: 100%;
+    }
+    .gaming-content {
+        flex-direction: column;
+    }
+    .gaming-content .gaming-text {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .gaming-content .gaming-text h2 {
+        font-size: 50px;
+    }
+}
+
+/* Extra Small Devices (phones, less than 768px) */
+@media (max-width: 576px) {
+    .navbar {
+        padding: 0px 10px;
+    }
+    .navbar .nav-menus {
+        display: none;
+    }
+    .t-card-1, .t-card-2, .t-card-3 {
+        width: 150px;
+        height: 90px;
+    }
+    .t-card-1 h2, .t-card-2 h2, .t-card-3 h2 {
+        font-size: 14px;
+    }
+    .t-card-1 p, .t-card-2 p, .t-card-3 p {
+        font-size: 11px;
+    }
+    .t-card-1 {
+        left: 15%;
+    }
+    .t-card-2 {
+        left: 60%;
+    }
+    .t-card-3 {
+        left: 35%;
+    }
+    .see-more {
+        left: 30%;
+    }
+    .see-more .see-more-text {
+        font-size: 16px;
+    }
+    .see-more .see-more-btn {
+        margin-left: 30px;
+        width: 80px;
+        height: 25px;
+        font-size: 10px;
+    }
+    .about {
+        padding: 10px;
+    }
+    .about .about-card {
+        padding: 10px;
+    }
+    .right-side {
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+    .right-side h2 {
+        font-size: 40px;
+    }
+    .gaming-king-img {
+        width: 100%;
+    }
+    .gaming-content {
+        flex-direction: column;
+    }
+    .gaming-content .gaming-text {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .gaming-content .gaming-text h2 {
+        font-size: 40px;
+    }
+    .features-wrapper h2 {
+        font-size: 35px;
+    }
+    .features-wrapper .sub-title {
+        font-size: 10px;
+    }
+    .image-slider .slider-imgs {
+        margin-left: 10%;
+    }
+    .closer-image img {
+        width: 100%;
+        margin-right: 0;
+    }
+    .contact .t-form {
+        left: 2%;
+    }
+    .input-box, .input-extra {
+        width: 280px;
+    }
+    .order-btn {
+        width: 80px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .footer-bar {
+        padding: 5px 10px;
+    }
+    .footer-bar button {
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+}
