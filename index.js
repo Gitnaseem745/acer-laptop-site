@@ -391,7 +391,7 @@ gsap.from('.contact .t-form input, .t-form textarea, .t-form p',{
 // contact elem animation
 
 gsap.to('.contact-elem',{
-    y:-3,
+    y:-5,
     duration: 1,
     scrub: 1,
     yoyo: true,
