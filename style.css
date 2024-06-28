@@ -558,3 +558,125 @@ html, body{
     transform: translateX(-50%) translateY(100px);
     opacity: 0;
 }
+
+
+
+/* responsive css */
+
+/* extra large screens */
+
+@media (min-width: 1560px) and (max-width: 3500px) {
+    
+    /* hero section */
+
+    .hero{
+        height: 1100px;
+    }
+    .navbar .nav-menus{
+        margin-right: 10px;
+    }
+    .t-card-1{
+        top: 330px;
+    }
+    .t-card-2{
+        top: 400px;
+    }
+    .t-card-3{
+        top: 720px;
+    }
+
+    /* about section */
+
+    .about .about-card{
+        height: 820px;
+    }
+
+    /* left side */
+
+    .card-text{
+        padding-right: 150px;
+    }
+    .card-text h2{
+        line-height: 4rem;
+    }
+    .card-text p{
+        line-height: 2rem;
+    }
+
+    /* right side */
+
+    .right-side{
+        padding-right: 180px;
+    }
+    .right-side p{
+        margin-bottom: 30px;
+    }
+    .right-side h2{
+        margin-bottom: 30px;
+    }
+    .right-side img{
+        margin-bottom: 30px;
+    }
+
+    /* gaming section */
+
+    .gaming-king .section-name{
+        margin-bottom: 80px;
+    }
+    .main-content{
+        height: 900px;
+    }
+    .gaming-content .gaming-text h2{
+        line-height: 6.7rem;
+    }
+    .gaming-content .gaming-text p{
+        line-height: 2rem;
+    }
+
+    /* features section */
+
+    .features .features-wrapper h2{
+        font-size: 70px;
+    } 
+    .features .features-wrapper .sub-title{
+        margin-bottom: 80px;
+    } 
+    .features-wrapper .sub-title{
+        line-height: 1.5rem;
+        font-size: 14px;
+        margin-left: 24px;
+    }
+
+    /* closer look section */
+
+    .closer-look .features-wrapper .sub-title{
+        margin-bottom: 70px;
+    }
+    .closer-video-container{
+        height: 760px;
+        margin-bottom: 20px;
+    }
+
+    /* contact section */
+
+    .contact{
+        height: 1100px;
+    }
+    .input-box{
+        width: 450px;
+        height: 100px;
+        font-size: 18px;
+    }
+    .input-extra{
+        width: 450px;
+        height: 200px;
+    }
+    .contact-right-image{
+        width: 700px;
+        left: 52%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1560px) {
+
+}

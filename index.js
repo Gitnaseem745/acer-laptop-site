@@ -315,6 +315,7 @@ document.addEventListener('DOMContentLoaded', () => {
         end: '+=1000vh',
         scrub: 1,
         pin: true,
+        markers: true,
         onUpdate: (self) => {
             gsap.to('.slider-imgs', {
                 x: `${-350 * self.progress}vw`,
