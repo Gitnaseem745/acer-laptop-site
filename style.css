@@ -677,6 +677,188 @@ html, body{
     }
 }
 
-@media (min-width: 768px) and (max-width: 1560px) {
+/* small screens */
 
+@media (max-width: 576px) {
+    
+    /* hero section */
+
+    .hero{
+        height: 100vh;
+        background-image: url(assets/smallSCreen.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .navbar{
+        padding: 0px 30px;
+    }
+    .navbar .logo{
+        margin-left: -10px;
+    }
+    .navbar .nav-menus{
+        display: none;
+    }
+    .t-cards{
+        display: none;
+    }
+    .see-more{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        left: 0;
+    }
+    .see-more .see-more-text{
+        font-size: 14px;
+    }
+    .see-more .see-more-btn{
+        font-size: 12px;
+        width: 90px;
+        height: 35px;
+        padding-top: 10px;
+        margin-left: 0;
+    }
+
+    /* about section */
+
+    .about{
+        padding-right: 0px;
+        padding: 10px;
+    }
+    .branding{
+        display: none;
+    }
+    .about .about-card{
+        flex-direction: column;
+        padding: 5px;
+        height: auto;
+        border-radius: 12px;
+    }
+
+    /* left side */
+
+    .left-side{
+        width: 100%;
+    }
+    .section-name img{
+        width: 10px;
+    }
+    .section-name p{
+        font-size: 11px;
+    }
+    .card-text{
+        padding: 10px;
+        gap: 10px;
+    }
+    .card-text h2{
+        font-size: 15px;
+        letter-spacing: normal;
+        line-height: 1.8rem;
+    }
+
+    /* right side */
+
+    .right-side{
+        width: 100%;
+        padding: 5px 40px;
+        margin-top: 40px;
+    }
+    .right-side p{
+        font-size: 16px;
+        text-align: center;
+    }
+    .right-side h2{
+        font-size: 46px;
+        text-align: center;
+    }
+
+    /* gaming section */
+
+    .gaming-king{
+        padding: 10px;
+        flex-direction: column;
+    }
+    .main-content{
+        margin-bottom: 10px;
+        overflow: auto;
+    }
+    .gaming-content{
+        flex-direction: column;
+    }
+    .gaming-king-img{
+        width: 100%;
+    }
+    .gaming-content{
+        justify-content: center;
+        height: 600px;
+    }
+    .gaming-content .gaming-text{
+        margin-top: 40px;
+        gap: 20px;
+    }
+    .gaming-content .gaming-text h2{
+        font-size: 36px;
+        line-height: 2.5rem;
+    }
+    .gaming-content .gaming-text p{
+        line-height: 1.5rem;
+    }
+
+    /* features section */
+
+    .features{
+        padding: 10px;
+    }
+    .features .features-wrapper h2{
+        font-size: 36px;
+    }
+    .image-slider{
+        margin-top: 100px;
+    }
+    .slider-imgs img{
+        width: 250px;
+        height: 100%;
+    }
+
+    /* closer look section */
+
+    .closer-look{
+        padding: 10px;
+    }
+    .closer-look .features-wrapper h2{
+        font-size: 36px;
+    }
+    .closer-video-container{
+        height: 350px;
+    }
+
+    /* contact section */
+    
+    .contact{
+        padding: 10px;
+        height: 700px;
+    }
+    .contact .features-wrapper h2{
+        font-size: 36px;
+    }
+    .contact .contact-elem{
+        display: none;
+    }
+
+    /* footer bar */
+
+    .footer-bar{
+        width: 90%;
+        overflow-x: hidden;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-bar button{
+        width: auto;
+        font-size: 6px;
+        font-family: "inter", sans-serif;
+        font-weight: 700;
+    }
 }
