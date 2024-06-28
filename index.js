@@ -1,3 +1,9 @@
+// functioning of navbar menus
+
+let homeBtn = document.querySelector('#home').addEventListener('click',()=>{
+    e.preventDefault()
+    homeBtn.scrollTo()
+})
 
 // form validation
 

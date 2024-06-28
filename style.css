@@ -324,7 +324,6 @@ html, body{
     letter-spacing: 0.7px;
 }
 
-
 /* features */
 
 .features{
@@ -334,7 +333,6 @@ html, body{
     padding-right: 10px;
     overflow-x: hidden;
 }
-
 .features-wrapper h2{
     font-size: 45px;
     font-family: "Zen Dots", sans-serif;
@@ -455,12 +453,18 @@ html, body{
     font-weight: 600;
     font-family: "inter", sans-serif;
 }
-.contact-elem{
+.contact-right-image{
     width: 600px;
     position: absolute;
     top: 13%;
     left: 50%;
+}
+.contact-elem{
+    width: 100%;
+    position: relative;
+    cursor: pointer;
     rotate: -8deg;
+    border-radius: 12px;
 }
 
 /* right side brand logo */
@@ -506,10 +510,48 @@ html, body{
     cursor: pointer;
     font-size: 12px;
 }
-.footer-bar button:hover{
-    background-color: rgba(212, 212, 212, 0.3);
-}
 
+/* animation on footer menus */
+
+.footer-bar button::after{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+.footer-bar button::before{
+    content: "";
+    background: linear-gradient(
+        45deg,
+        #ff0000, #ff7300, #fffb00, #48ff00,
+        #00ffd5, #002bff, #ff00c8, #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 0;
+}
+@keyframes glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+
+}
+.footer-bar button:hover::before{
+    opacity: 1;
+}
 /* Hidden state */
 
 .footer-bar.hidden {
