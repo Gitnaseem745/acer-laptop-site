@@ -814,6 +814,9 @@ html, body{
 
     /* contact us section */
 
+    .contact{
+        overflow-x: hidden;
+    }
     .contact .t-form{
         z-index: 1000;
     }
