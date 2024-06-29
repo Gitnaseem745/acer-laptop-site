@@ -16,4 +16,4 @@ Feel free to explore the code, provide feedback, and contribute! Thank you for v
 
 ---
 
-Check out the [live demo](#https://acer-laptop-site.vercel.app/) of the project and dive into the code to see how it's built.
+Check out the [live demo](https://acer-laptop-site.vercel.app/) of the project and dive into the code to see how it's built.
