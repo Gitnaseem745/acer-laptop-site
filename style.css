@@ -679,11 +679,166 @@ html, body{
 
 /* large screens */
 
-@media (min-width: 768px) and (max-width: 1560px){
+@media (min-width: 992px) and (max-width: 1200px){
 
 }
 
 /* medium screens */
+
+@media (min-width: 768px) and (max-width: 992px){
+      /* hero section */
+
+      .hero{
+        padding: 10px;
+    }
+    .navbar{
+        padding: 10px 40px;
+        margin-left: 10px;
+    }
+    .navbar .nav-menus .nav-links{
+        margin-left: 10px;
+    }
+    .t-card-1{
+        top: 240px;
+        left: 20%;
+    }
+    .t-card-2{
+        top: 100px;
+        left: 67%;
+    }
+    .see-more{
+        left: 38%;
+    }
+
+    /* about us section */
+
+    .about{
+        padding-right: 0px;
+        padding: 40px;
+    }
+    .branding{
+        display: none;
+    }
+    .about .about-card{
+        flex-direction: row;
+        padding: 15px 20px;
+        height: auto;
+        border-radius: 12px;
+    }
+    
+    /* left side */
+
+    .left-side{
+        width: 100%;
+    }
+    .section-name img{
+        width: 15px;
+    }
+    .section-name p{
+        font-size: 14px;
+        font-size: 12px;
+    }
+    .card-text{
+        padding: 10px;
+        gap: 20px;
+    }
+    .card-text h2{
+        font-size: 16px;
+        letter-spacing: normal;
+        line-height: 2rem;
+    }
+    .card-text p{
+        font-size: 12px;
+        line-height: 1.5rem;
+    }
+
+    /* right side */
+
+    .right-side{
+        width: 100%;
+        padding: 5px 70px;
+        margin-top: 40px;
+    }
+    .right-side p{
+        font-size: 16px;
+    }
+    .right-side h2{
+        font-size: 60px;
+    }
+
+    /* gaming section */
+
+    .gaming-king{
+        padding: 0px 40px;
+        flex-direction: row;
+        height: 100%;
+    }
+    .main-content{
+        margin-bottom: 10px;
+        overflow: hidden;
+    }
+    .gaming-content{
+        flex-direction: row;
+        gap: 40px;
+    }
+    .gaming-king-img{
+        width: 80%;
+    }
+    .gaming-content{
+        justify-content: center;
+        height: 530px;
+    }
+    .gaming-content .gaming-text{
+        margin-top: 40px;
+        gap: 20px;
+    }
+    .gaming-content .gaming-text h2{
+        font-size: 40px;
+        line-height: 3.3rem;
+    }
+    .gaming-content .gaming-text p{
+        line-height: 1.2rem;
+        font-size: 14px;
+    }
+
+    /* features section */
+
+    .image-slider .slider-imgs img{
+        width: 470px;
+    }
+    /* closer look section */
+
+    .closer-video-container{
+        height: 380px;
+        margin: 60px 0px;
+    }
+
+    /* contact us section */
+
+    .contact{
+        overflow-x: hidden;
+    }
+    .contact .t-form{
+        z-index: 1000;
+    }
+    .contact .contact-right-image{
+        width: 400px;
+        top: 27%;
+        left: 53%;
+        z-index: 0;
+    }
+    .contact-elem{
+        rotate: -8deg;
+    }
+
+    /* brand section */
+
+    .brand-img{
+        top: 40%;
+    }
+}
+
+/* small screens */
 
 @media (min-width: 576px) and (max-width: 768px){
     
@@ -837,7 +992,7 @@ html, body{
     }
 }
 
-/* small screens */
+/* extra small screens */
 
 @media (max-width: 576px) {
     
