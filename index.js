@@ -361,6 +361,17 @@ gsap.from('.closer-look .features-wrapper .sub-title',{
     }
 })
 
+gsap.from('.closer-look .closer-video-container',{
+    y: 20,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: '.closer-look',
+        start: 'bottom 30%',
+        end: 'bottom bottom',
+    }
+})
+
 // contact section gsap
 
 gsap.from('.contact .section-name',{
